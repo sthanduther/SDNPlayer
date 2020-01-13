@@ -10,7 +10,7 @@ var playhead = document.getElementById("playhead");
 playhead.addEventListener("timeupdate", timeUpdate, false);
 
 
-
+//PLAY E MUTE EVENTS
 pbutton.addEventListener("click", play);
 
 muteb.addEventListener("click", mute);
@@ -20,14 +20,14 @@ podplays.addEventListener("timeupdate", timeUpdate, false);
 
 
 
-
+//DURAÇÃO
 podplays.addEventListener("canplaythrough", function () {
 duration = podplays.duration;
 	document.getElementById("duration").innerHTML = Math.floor(this.duration / 3000) + ':'  + Math.floor(this.duration / 60 % 60) + ':' + Math.floor(this.duration % 60);
 
 }, false);
 
-
+//FUNÇÃO PLAY
 function play() {
 	if (podplays.paused) {
 	podplays.play();
@@ -40,7 +40,7 @@ function play() {
 		
 	}
 }
-
+//AUTO EXPLICATIVO
 function mute() {
 	if (podplays.muted == true) {
 		podplays.muted = false;
@@ -54,7 +54,7 @@ function mute() {
 }
 
 
-
+//TIMELINE
 var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
 
