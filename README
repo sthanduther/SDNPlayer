@@ -1,10 +1,12 @@
-Um simples player para audio. Eu estou tendo problemas com a timeline e o layout responsivo. Esse é o player que eu pretendo usar em meus podcasts.
+Um simples player para audio. Eu estou tendo problemas com a timeline e o layout responsivo. E a timeline que apresenta um pequeno bug quando a pessoa muda a resolução da tela. E eu não consigo criar um layout responsivo. Eu espero que me ajudem com isso. Esse é o player que eu pretendo usar em meus podcasts.
 
 #REGRAS
 
 È PROIBIDO IMPORTAR CÓDIGOS (PRINCIPALMENTE DE TERCEIROS)
 RESPEITE O(A) COLEGA
-ENTENDA O FATO DO AUTOR DESSE PROJETO SER UM CHATO
 SEJA PACIENTE
 COMENTÁRIOS EM CÓDIGOS SÃO IMPORTANTES. NUNCA EXIJA QUE SEJAM APAGADOS.
-A versão atual é 20200113. E-mail para contato: lera@suitedosnerds.com.
+QUALQUER PROBLEMA COM O CÓDIGO, *USE O GIT* PARA DAR SUGESTÕES DE COMO RESOLVE-LO.
+
+
+A versão atual é 20200124. E-mail para contato: lera@suitedosnerds.com.
