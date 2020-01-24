@@ -23,7 +23,7 @@ muteb.addEventListener("click", mute);
 //Os númerozinhos que indicam quanto tempo passou
 podplays.addEventListener("timeupdate", timeUpdate, false);
 //a barra de progresso
-podplays.addEventListener("progress", function() {
+podplays.addEventListener("timeupdate", function() {
 	if (duration > 0) {
 		for (var i = 0; i < podplays.buffered.length; i++) {
 			if (podplays.buffered.start(podplays.buffered.length - 1 - i) < podplays.currentTime) {
