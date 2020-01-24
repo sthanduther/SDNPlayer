@@ -1,7 +1,3 @@
-/* Isso pertence a um retardado feliz conhecido como Lera. Apesar de livre, o autor terá que ser citado. Roubo de código é crime!
-
-UM BEIJO NA SUA BOCA!=)*/
-
 @media only screen and (max-width: 360px) {
 	#pbutton {
 		left:0;
@@ -154,12 +150,12 @@ float:left;
 	}
 .playbutton {
 
-	background:url("./css.suitedosnerds.com/play.svg");
+	background:url("./svg/play.svg");
 	}
 
 
 .pause {
-	background-image:url("./css.suitedosnerds.com/pause.svg");
+	background-image:url("./svg/pause.svg");
 }
 
 #muteb {
@@ -174,11 +170,11 @@ float:left;
 }
 
 .mutebutton {
-	background:url("./css.suitedosnerds.com/muteb.svg");
+	background:url("./svg/muteb.svg");
 }
 
 .unmutebutton {
-	background-image:url("./css.suitedosnerds.com/unmuteb.svg");
+	background-image:url("./svg//unmuteb.svg");
 }
 
 
@@ -281,4 +277,3 @@ height:14em;
 #playlist ul li span:active {
 	  background-color: rgba(255,193,193, 0.3);
 }
-
