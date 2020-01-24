@@ -1,3 +1,9 @@
+/* Isso pertence a um retardado feliz conhecido como Lera. Apesar de livre, o autor terá que ser citado. Roubo de código é crime!
+
+UM BEIJO NA SUA BOCA!=)*/
+
+
+//Variaveis...
 var podplays = document.getElementById("podplays");
 var pbutton = document.getElementById("pbutton");
 var muteb = document.getElementById("muteb");
@@ -6,17 +12,17 @@ var currentTime = podplays.currentTime;
 var playhead = document.getElementById("playhead");
 
 
-
+//Isso é importante para a barra de tempo fincionar
 playhead.addEventListener("timeupdate", timeUpdate, false);
 
 
-
+//função play
 pbutton.addEventListener("click", play);
-
+//...
 muteb.addEventListener("click", mute);
-
+//Os númerozinhos que indicam quanto tempo passou
 podplays.addEventListener("timeupdate", timeUpdate, false);
-
+//a barra de progresso
 podplays.addEventListener("progress", function() {
 	if (duration > 0) {
 		for (var i = 0; i < podplays.buffered.length; i++) {
@@ -28,7 +34,7 @@ podplays.addEventListener("progress", function() {
 	}
 });
 
-
+//a função que atualiza o tempo
 podplays.addEventListener("timeupdate", function() {
 var duration = podplays.duration;
 	if (duration > 0) {
@@ -45,7 +51,7 @@ duration = podplays.duration;
 
 }, false);
 
-
+//isso é para o botão funcionar (sim, eu estou tentando ser engraçado)
 function play() {
 	if (podplays.paused) {
 	podplays.play();
@@ -72,13 +78,13 @@ function mute() {
 }
 
 
-
+//isso é para limitar a largura da timeline
 var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
 
 
 
-
+//isso é para torna-la clicavel
 timeline.addEventListener("click", function (event) {
 	moveplayhead(event)
 	podplays.currentTime = duration * clickPercent(event);
@@ -104,7 +110,7 @@ function moveplayhead(event) {
 }
 
 
-
+//A função do tempo. Deleta-la causará o fim do universo!
 function timeUpdate() {
 var playPercent = timelineWidth * (podplays.currentTime / duration);
 playhead.style.width = playPercent + "px";
