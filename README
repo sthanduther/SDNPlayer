@@ -1,5 +1,7 @@
 Um simples player para audio. Eu estou tendo problemas com a timeline e o layout responsivo. E a timeline que apresenta um pequeno bug quando a pessoa muda a resolução da tela. E eu não consigo criar um layout responsivo. Eu espero que me ajudem com isso. Esse é o player que eu pretendo usar em meus podcasts.
 
+Um pouco do código foi o que eu sei de memória e parte com a ajuda do [b]MDN[/b].
+
 #REGRAS
 
 È PROIBIDO IMPORTAR CÓDIGOS (PRINCIPALMENTE DE TERCEIROS)
