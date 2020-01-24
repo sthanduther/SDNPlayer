@@ -3,3 +3,7 @@
 *Adicionada nova função (seek/buffer)
 *Corrigida a falta de botóes
 *O css está em um arquivo separado
+
+
+*Corrigido um "bug" com a barra que indicab o quanto foi baixado
+*Mudei a tag do "playhead".
