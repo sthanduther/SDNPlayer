@@ -15,3 +15,4 @@
 *Responsividade do layout ainda com problema
 *A timeline continua com o mesmo problema
 *A maioria das ID's no CSS foram substituidas por class.
+*Desfazendo o erro que eu fiz com a timeline (mas ainda com o mesmo bug da largura)
