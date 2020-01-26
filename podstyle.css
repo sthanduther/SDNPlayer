@@ -10,13 +10,13 @@
 	@media only screen and (max-width: 740px) {
 
 
-		#ctime {
+		.ctime {
 			float:left;
 			left:0;
 			bottom:1.4em;
 		}
 
-		#duration {
+		.pdur {
 
 		bottom:2.6em;
 			float:right;
@@ -24,7 +24,7 @@
 		margin-right:9em;
 		}
 
-		#timeline {
+		.tline {
 			left:0;
 			margin-top:-8em;
 		
@@ -45,12 +45,12 @@
 
 
 	@media only screen and (max-width: 768px) {
-		#ctime {
+		.ctime {
 			margin-top:3em;
 			margin-left:3em;
 		}
 
-		#duration {
+		.pdur {
 			margin-top:4em;
 		}
 
@@ -59,7 +59,7 @@
 
 		}
 
-		#timeline {
+		.tline {
 			margin-bottom:3em;
 		}
 	}
@@ -68,12 +68,12 @@
 
 	@media only screen and (max-width: 1024px) {
 
-		#ctime {
+		.ctime {
 			left:0;
 			float:left;
 		}
 
-		#timeline {
+		.tline {
 			left:0;
 
 		}
@@ -96,7 +96,7 @@
 		margin-left:-9em;
 		}
 
-		#duration {
+		.pdur {
 			top:-1.2em;
 			float:right;
 			margin-right:8em;
@@ -104,18 +104,18 @@
 		}
 
 
-		#ctime {
+		.ctime {
 			top:3em;
 		}
 
-		#timeline {
+		.tline {
 			max-width:100%;
 			margin-right:3%;	
 		
 			
 
 		}
-		#playhead {
+		.phead {
 			
 			position:relative;
 		}
@@ -129,7 +129,7 @@
 
 	}
 
-	#podplayer {
+	.podplayer {
 		border:#cd919e solid;
 		max-width:100%;
 		/*min-height:800px;*/
@@ -181,7 +181,7 @@
 
 
 
-	#timeline {
+	.tline {
 		right:-2em;
 		top:15em;
 		width:600px;
@@ -191,7 +191,7 @@
 		position:relative;
 	}
 
-	#playhead {
+	.phead {
 	width:0;
 	height:50px;
 	float:left;
@@ -200,14 +200,14 @@
 
 	}
 
-	#d1 {
+	.d1 {
 		 display: block;
 	    height: 100%;
 	    background-color: rgba(255,0,0, 0.3);
 	    width: 0;
 	}
 
-	#downloaded {
+	.dladed {
 		width:0;
 		height:50px;
 		background-color: rgba(255,193,193, 0.3);
@@ -215,7 +215,7 @@
 		/*bottom:51px;	*/
 	}
 
-	#ctime {
+	.ctime {
 		background:rgba(112,128,144,1);
 		float:left;
 		color:#ffe4e1;
@@ -223,7 +223,7 @@
 		position:relative;
 	}
 
-	#duration {
+	.pdur {
 		background-color:rgba(112,128,144,1);
 		font-weight:bold;
 		color:#ffe4e1;
@@ -231,7 +231,7 @@
 		position:relative;
 	}
 
-	#ctime, #duration {
+	.ctime, .pdur {
 		font-size:200%;
 	}
 
@@ -250,7 +250,7 @@
 }
 
 
-#podtitle h1 {
+.ptitle h1 {
 
 	color:#ffe4e1;
 	background: rgba(112,128,144,0.6);
@@ -259,7 +259,7 @@ display:inline;
 	
 }
 
-#podtitle {
+.ptitle {
 	overflow:auto;
 height:14em;
 
@@ -269,7 +269,7 @@ height:14em;
 
 
 
-#playlist {
+.plist {
 	background-color: #bebebe;
 	position:relative;
 	top:14.6em;
@@ -278,17 +278,17 @@ height:14em;
 	width:100%;
 }
 
-#playlist ul li {
+.plist ul li {
 	line-height:1.3em;
 	list-style:none;
 }
 
-#playlist ul li span {
+.plist ul li span {
 	background:#708090;	
 	font-weight:bold;
 	color:#eee9e9;
 }
 
-#playlist ul li span:active {
+.plist ul li span:active {
 	  background-color: rgba(255,193,193, 0.3);
 }
