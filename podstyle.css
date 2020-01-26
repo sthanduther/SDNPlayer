@@ -24,7 +24,7 @@
 		margin-right:9em;
 		}
 
-		.tline {
+		#timeline {
 			left:0;
 			margin-top:-8em;
 		
@@ -59,7 +59,7 @@
 
 		}
 
-		.tline {
+		#timeline {
 			margin-bottom:3em;
 		}
 	}
@@ -73,7 +73,7 @@
 			float:left;
 		}
 
-		.tline {
+		#timeline {
 			left:0;
 
 		}
@@ -108,14 +108,14 @@
 			top:3em;
 		}
 
-		.tline {
+		#timeline {
 			max-width:100%;
 			margin-right:3%;	
 		
 			
 
 		}
-		.phead {
+		#playhead {
 			
 			position:relative;
 		}
@@ -181,7 +181,7 @@
 
 
 
-	.tline {
+	#timeline {
 		right:-2em;
 		top:15em;
 		width:600px;
@@ -191,7 +191,7 @@
 		position:relative;
 	}
 
-	.phead {
+	#playhead {
 	width:0;
 	height:50px;
 	float:left;
@@ -200,14 +200,14 @@
 
 	}
 
-	.d1 {
+	#d1 {
 		 display: block;
 	    height: 100%;
 	    background-color: rgba(255,0,0, 0.3);
 	    width: 0;
 	}
 
-	.dladed {
+	#downloaded {
 		width:0;
 		height:50px;
 		background-color: rgba(255,193,193, 0.3);
