@@ -14,3 +14,4 @@
 *Adicionado um controle do volume
 *Responsividade do layout ainda com problema
 *A timeline continua com o mesmo problema
+*A maioria das ID's no CSS foram substituidas por class.
