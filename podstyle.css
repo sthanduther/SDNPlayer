@@ -16,6 +16,10 @@
 	.time {
 		margin-left:-7em;
 	}
+
+	.Watermark {
+		margin-left:5em;
+	}
 }
 
 
@@ -51,6 +55,11 @@
 
 	.vol {
 		margin-left:-24em;
+	}
+
+	.Watermark {
+		left:0;
+		margin-top:-0.4em;
 	}
 
 }
@@ -234,4 +243,20 @@ height:14em;
 
 .plist ul li span:active {
 	  background-color: rgba(255,193,193, 0.3);
+}
+
+
+@font-face {
+	font-family:aforever;
+	src:url(fonts/amiga4ever-pro.ttf);
+}
+
+.Watermark {
+position:relative;
+right:7.5em;
+top:1.2em;
+font-size:143%;
+color:#cd919e;
+opacity:0.4;
+font-family:aforever;
 }
