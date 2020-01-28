@@ -1,3 +1,5 @@
+//Mais variável que o meu humor!
+
 var podplays = document.getElementById("podplays");
 var pbutton = document.getElementById("pbutton");
 var muteb = document.getElementById("muteb");
@@ -7,16 +9,17 @@ var playhead = document.getElementById("playhead");
 var thevol = document.getElementById("volu");
 var volume = podplays.volume;
 
-
+//Sem isso, sem controle de volume.
 thevol.addEventListener("change", function() {
 
 	podplays.volume = thevol.value;
 });
 
+//Aqueles númerozinhos que mostram quanto tempo se passou e o tempo total do audio
 playhead.addEventListener("timeupdate", timeUpdate, false);
 
 
-
+//Eventos e "click" (ou "touch").
 pbutton.addEventListener("click", play);
 
 muteb.addEventListener("click", mute);
@@ -28,13 +31,15 @@ podplays.addEventListener("timeupdate", function() {
 		for (var i = 0; i < podplays.buffered.length; i++) {
 			if (podplays.buffered.start(podplays.buffered.length - 1 - i) < podplays.currentTime) {
 				document.getElementById("d1").style.width = (podplays.buffered.end(podplays.buffered.length - 1 - i) / duration) * 100 + "%";
+			
+//Não apague essa linha!
 				break;
 			}
 		}
 	}
 });
 
-
+//A função do tempo...
 podplays.addEventListener("timeupdate", function() {
 var duration = podplays.duration;
 	if (duration > 0) {
@@ -47,11 +52,12 @@ var duration = podplays.duration;
 
 podplays.addEventListener("canplaythrough", function () {
 duration = podplays.duration;
+	//Esse é o calculo do tempo.
 	document.getElementById("duration").innerHTML = Math.floor(this.duration / 3000) + ':'  + Math.floor(this.duration / 60 % 60) + ':' + Math.floor(this.duration % 60);
 
 }, false);
 
-
+//O nome da função é auto-explicativo.
 function play() {
 	if (podplays.paused) {
 	podplays.play();
