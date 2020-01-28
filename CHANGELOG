@@ -1,18 +1,24 @@
 01/24/2020:
 
-*Adicionada nova função (seek/buffer)
-*Corrigida a falta de botóes
-*O css está em um arquivo separado
+*Adicionada nova função (seek/buffer);
+*Corrigida a falta de botóes;
+*O css está em um arquivo separado.
 
 
-*Corrigido um "bug" com a barra que indicab o quanto foi baixado
+*Corrigido um "bug" com a barra que indicab o quanto foi baixado;
 *Mudei a tag do "playhead".
 
 
-01/26/2020
+01/26/2020:
 
-*Adicionado um controle do volume
-*Responsividade do layout ainda com problema
-*A timeline continua com o mesmo problema
-*A maioria das ID's no CSS foram substituidas por class.
-*Desfazendo o erro que eu fiz com a timeline (mas ainda com o mesmo bug da largura)
+*Adicionado um controle do volume;
+*Responsividade do layout ainda com problema;
+*A timeline continua com o mesmo problema;
+*A maioria das ID's no CSS foram substituidas por class;
+*Desfazendo o erro que eu fiz com a timeline (mas ainda com o mesmo bug da largura).
+
+
+01282020:
+
+*O player está mais responsivo;
+*O problena com a timeline continua.
