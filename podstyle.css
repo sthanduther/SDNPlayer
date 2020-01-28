@@ -1,151 +1,82 @@
-	@media only screen and (max-width: 360px) {
-		#pbutton {
-			left:0;
-		}
+
+@media only screen and (max-width: 740px) {
+	#timeline {
+		margin-left:-7em;
 	}
 
+	.ppmbtn {
+		margin-left:-7em;
+	}
+
+	.time {
+		margin-left:-7em;
+	}
+}
 
 
 
-	@media only screen and (max-width: 740px) {
 
+@media only screen and (orientation: portrait) {
+	#timeline {
+		max-width:100%;
+		margin-left:-11em;
+	}
 
-		.ctime {
-			float:left;
-			left:0;
-			bottom:1.4em;
-		}
-
-		.pdur {
-
-		bottom:2.6em;
-			float:right;
-		left:3em;
-		margin-right:9em;
-		}
-
-		#timeline {
-			left:0;
-			margin-top:-8em;
-		
-		}
-
-		#muteb {
-			left:14em;
-			margin-top:-3em;
-
-		}
-
-		#pbutton {
-			left:4em;
-			margin-top:-3em;
-		}
+	.ppmbtn {
+		margin-left:-12em;
+		min-width:100%;
 
 	}
 
-
-	@media only screen and (max-width: 768px) {
-		.ctime {
-			margin-top:3em;
-			margin-left:3em;
-		}
-
-		.pdur {
-			margin-top:4em;
-		}
-
-		#pbutton {
-			top:9em;
-
-		}
-
-		#timeline {
-			margin-bottom:3em;
-		}
+	#muteb {
+		margin-left:-12em;
+	}
+	.time {
+		margin-left:-13.5em;
+		min-width:100%;
 	}
 
-
-
-	@media only screen and (max-width: 1024px) {
-
-		.ctime {
-			left:0;
-			float:left;
-		}
-
-		#timeline {
-			left:0;
-
-		}
-
-		#pbutton {
-		right:21em;
-		}
-
+	.pdur {
+		margin-left:-6em;
 	}
 
-
-
-
-
-
-	@media only screen and (orientation: portrait) {
-
-
-		#pbutton {
-		margin-left:-9em;
-		}
-
-		.pdur {
-			top:-1.2em;
-			float:right;
-			margin-right:8em;
-			left:7em;
-		}
-
-
-		.ctime {
-			top:3em;
-		}
-
-		#timeline {
-			max-width:100%;
-			margin-right:3%;	
-		
-			
-
-		}
-		#playhead {
-			
-			position:relative;
-		}
-
-
-		#muteb {
-			margin-top:8em;
-			left:3em;
-			margin-right:12em;
-		}
-
+	.podplayer {
+		min-width:100%;
 	}
+
+	.vol {
+		margin-left:-24em;
+	}
+
+}
 
 	.podplayer {
 		border:#cd919e solid;
 		max-width:100%;
-		/*min-height:800px;*/
+		min-height:100%;
 		background:rgba(207,207,207);
-		
+/*		text-align:center;*/
 	}
+
+
+
+ .ppmbtn {
+
+	width:42%;
+	position:relative;
+	top:7em;
+	left:12em;
+	opacity:0.6;
+}
 
 	#pbutton {
 		width:12em;
 		height:7em;
 		background-size:11em 7em;
 	background-repeat:no-repeat;
-	top:4em;
-	right:-14em;
+		top:2em;
+/*	left:14%;*/
 	position:relative;
-	float:left;
 
 		}
 	.playbutton {
@@ -164,9 +95,8 @@
 		background-size:154% 110%;
 		background-repeat:no-repeat;
 		position:relative;
-		top:4em;
-		right:29em;
-		float:right;
+		bottom:4em;
+		left:28em;
 	}
 
 	.mutebutton {
@@ -182,8 +112,8 @@
 
 
 	#timeline {
-		right:-2em;
-		top:15em;
+		left:11em;
+		top:10em;
 		width:600px;
 		float:left;
 		height:50px;
@@ -217,9 +147,8 @@
 
 	.ctime {
 		background:rgba(112,128,144,1);
-		float:left;
 		color:#ffe4e1;
-		right:-10em;
+	/*	left:22%;*/
 		position:relative;
 	}
 
@@ -227,8 +156,16 @@
 		background-color:rgba(112,128,144,1);
 		font-weight:bold;
 		color:#ffe4e1;
-		right:3em;
+		left:10em;
 		position:relative;
+	}
+
+	.time {
+
+		position:relative;
+		left:13.5em;
+		top:6em;
+		width:38%;
 	}
 
 	.ctime, .pdur {
@@ -240,8 +177,9 @@
 		-webkit-appearance:none;
 		background:rgba(105,105,105,0.6);
 		position:relative;
-		top:3em;
-		right:33em;
+		top:11em;
+		left:31em;
+		z-index:1;
 	}
 
 
