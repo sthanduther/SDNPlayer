@@ -1,3 +1,6 @@
+/*Esse código foi escrito por um retardado feliz conhecido como Lera*/
+
+
 //Mais variável que o meu humor!
 
 var podplays = document.getElementById("podplays");
