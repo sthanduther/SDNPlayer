@@ -1,21 +1,20 @@
 /*Esse código foi escrito por um retardado feliz conhecido como Lera*/
 
-
 //Mais variável que o meu humor!
 
-var podplays = document.getElementById("podplays");
-var pbutton = document.getElementById("pbutton");
+var podplays = document.getElementById("podcast");
+var pbutton = document.getElementById("pButton");
 var muteb = document.getElementById("muteb");
-var duration = podplays.duration;
-var currentTime = podplays.currentTime;
+var duration = podcast.duration;
+var currentTime = podcast.currentTime;
 var playhead = document.getElementById("playhead");
 var thevol = document.getElementById("volu");
-var volume = podplays.volume;
+var volume = podcast.volume;
 
 //Sem isso, sem controle de volume.
 thevol.addEventListener("change", function() {
 
-	podplays.volume = thevol.value;
+	podcast.volume = thevol.value;
 });
 
 //Aqueles númerozinhos que mostram quanto tempo se passou e o tempo total do audio
@@ -23,17 +22,17 @@ playhead.addEventListener("timeupdate", timeUpdate, false);
 
 
 //Eventos e "click" (ou "touch").
-pbutton.addEventListener("click", play);
+pButton.addEventListener("click", play);
 
 muteb.addEventListener("click", mute);
 
-podplays.addEventListener("timeupdate", timeUpdate, false);
+podcast.addEventListener("timeupdate", timeUpdate, false);
 
-podplays.addEventListener("timeupdate", function() {
+podcast.addEventListener("timeupdate", function() {
 	if (duration > 0) {
-		for (var i = 0; i < podplays.buffered.length; i++) {
-			if (podplays.buffered.start(podplays.buffered.length - 1 - i) < podplays.currentTime) {
-				document.getElementById("d1").style.width = (podplays.buffered.end(podplays.buffered.length - 1 - i) / duration) * 100 + "%";
+		for (var i = 0; i < podcast.buffered.length; i++) {
+			if (podcast.buffered.start(podcast.buffered.length - 1 - i) < podcast.currentTime) {
+				document.getElementById("d1").style.width = (podcast.buffered.end(podcast.buffered.length - 1 - i) / duration) * 100 + "%";
 			
 //Não apague essa linha!
 				break;
@@ -43,18 +42,18 @@ podplays.addEventListener("timeupdate", function() {
 });
 
 //A função do tempo...
-podplays.addEventListener("timeupdate", function() {
-var duration = podplays.duration;
+podcast.addEventListener("timeupdate", function() {
+var duration = podcast.duration;
 	if (duration > 0) {
-		document.getElementById("downloaded").style.width = ((podplays.currentTime / duration)*100) + "%";
+		document.getElementById("downloaded").style.width = ((podcast.currentTime / duration)*100) + "%";
 	}
 });
 
 
 
 
-podplays.addEventListener("canplaythrough", function () {
-duration = podplays.duration;
+podcast.addEventListener("canplaythrough", function () {
+duration = podcast.duration;
 	//Esse é o calculo do tempo.
 	document.getElementById("duration").innerHTML = Math.floor(this.duration / 3000) + ':'  + Math.floor(this.duration / 60 % 60) + ':' + Math.floor(this.duration % 60);
 
@@ -62,25 +61,25 @@ duration = podplays.duration;
 
 //O nome da função é auto-explicativo.
 function play() {
-	if (podplays.paused) {
-	podplays.play();
-	pbutton.className = "";
-	pbutton.className = "pause";
+	if (podcast.paused) {
+	podcast.play();
+	pButton.className = "";
+	pButton.className = "pause";
 	} else {
-		podplays.pause();
-		pbutton.className = "";
-		pbutton.className = "playbutton";
+		podcast.pause();
+		pButton.className = "";
+		pButton.className = "playbutton";
 		
 	}
 }
 
 function mute() {
-	if (podplays.muted == true) {
-		podplays.muted = false;
+	if (podcast.muted == true) {
+		podcast.muted = false;
 		muteb.className = "";
 		muteb.className = "mutebutton";
 	} else {
-		podplays.muted = true;
+		podcast.muted = true;
 		muteb.className = "";
 		muteb.className = "unmutebutton";
 	}
@@ -96,7 +95,7 @@ var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
 timeline.addEventListener("click", function (event) {
 	moveplayhead(event)
-	podplays.currentTime = duration * clickPercent(event);
+	podcast.currentTime = duration * clickPercent(event);
 }, false);
 
 function clickPercent(event) {
@@ -121,11 +120,11 @@ function moveplayhead(event) {
 
 
 function timeUpdate() {
-var playPercent = timelineWidth * (podplays.currentTime / duration);
+var playPercent = timelineWidth * (podcast.currentTime / duration);
 playhead.style.width = playPercent + "px";
 
 
-	var playPercent = timelineWidth * (podplays.currentTime / duration);
+	var playPercent = timelineWidth * (podcast.currentTime / duration);
 		document.getElementById("ctime").innerHTML = Math.floor(this.currentTime / 3000) + ':' + Math.floor(this.currentTime / 60 % 60) + ':' + Math.floor(this.currentTime % 60);
 }
 
