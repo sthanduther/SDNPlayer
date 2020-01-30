@@ -1,6 +1,8 @@
-Um simples player para audio. Eu estou tendo problemas com a timeline e o layout agora está mais responsivo. E a timeline que apresenta um pequeno bug quando a pessoa muda a resolução da tela. E eu não consigo criar um layout responsivo. Eu espero que me ajudem com isso. Esse é o player que eu pretendo usar em meus podcasts.
+Isso é apenas um player para podcast. O uso é livrxe, por tanto que cite a fonte.
 
 Um pouco do código foi o que eu sei de memória e parte com a ajuda do [b]MDN[/b].
+
+Quem quiser (e puder) ajudar, leia as regras.
 
 #REGRAS
 
@@ -11,4 +13,4 @@ COMENTÁRIOS EM CÓDIGOS SÃO IMPORTANTES. NUNCA EXIJA QUE SEJAM APAGADOS.
 QUALQUER PROBLEMA COM O CÓDIGO, *USE O GIT* PARA DAR SUGESTÕES DE COMO RESOLVE-LO.
 
 
-A versão atual é 20200128. E-mail para contato: lera@suitedosnerds.com.
+A versão atual é 20200130. E-mail para contato: lera@suitedosnerds.com.
